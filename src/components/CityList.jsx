@@ -1,4 +1,4 @@
-import Cityitem from "./Cityitem";
+import CityItem from "./Cityitem";
 import styles from "./CityList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
@@ -14,7 +14,7 @@ function CityList() {
   return (
     <ul className={styles.cityList}>
       {cities.map((city) => (
-        <Cityitem city={city} key={city.id} />
+        <CityItem city={city} key={city.id} />
       ))}
     </ul>
   );
